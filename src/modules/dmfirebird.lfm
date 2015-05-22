@@ -1,0 +1,36 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 186
+  HorizontalOffset = 498
+  VerticalOffset = 159
+  Width = 400
+  object IBConnection1: TIBConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Password = 'masterkey'
+    Transaction = SQLTransaction1
+    UserName = 'SYSDBA'
+    LogEvents = []
+    left = 39
+    top = 16
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = IBConnection1
+    Params = <>
+    left = 136
+    top = 19
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = IBConnection1
+    left = 240
+    top = 19
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 39
+    top = 80
+  end
+end
