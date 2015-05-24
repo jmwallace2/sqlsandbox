@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, lazcontrols, frmMain, dmFirebird;
+  Forms, lazcontrols, frmMain, dmFirebirdDbc;
 
 {$R *.res}
 
@@ -15,7 +15,6 @@ begin
   RequireDerivedFormResource := True;
   Application.Initialize;
   Application.CreateForm(TMain, Main);
-  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TFirebirdDbc, FirebirdDbc);
   Application.Run;
 end.
-

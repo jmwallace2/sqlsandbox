@@ -1,10 +1,10 @@
-object DataModule1: TDataModule1
+object FirebirdDbc: TFirebirdDbc
   OldCreateOrder = False
   Height = 186
   HorizontalOffset = 498
   VerticalOffset = 159
   Width = 400
-  object IBConnection1: TIBConnection
+  object IBConnection: TIBConnection
     Connected = False
     LoginPrompt = False
     KeepConnection = False
@@ -15,20 +15,20 @@ object DataModule1: TDataModule1
     left = 39
     top = 16
   end
-  object SQLQuery1: TSQLQuery
+  object SQLQuery: TSQLQuery
     FieldDefs = <>
     Database = IBConnection1
     Params = <>
     left = 136
     top = 19
   end
-  object SQLTransaction1: TSQLTransaction
+  object SQLTransaction: TSQLTransaction
     Active = False
     Database = IBConnection1
     left = 240
     top = 19
   end
-  object DataSource1: TDataSource
+  object DataSource: TDataSource
     DataSet = SQLQuery1
     left = 39
     top = 80
